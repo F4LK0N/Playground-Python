@@ -433,17 +433,35 @@ f14(6)
 
 
 
-### ERRORS ###
-print("### ERRORS ###")
-
-
-
-
-
-
 ### CLASSES ###
 print("### CLASSES ###")
+class Class1:
+    x = 5
+obj1 = Class1()
+print(obj1.x)
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def __str__(self):
+        return f"{self.name}({self.age})"
+    def method1(self):
+        print("Hello my name is " + self.name)
+obj2 = Person("John", 36)
+print(obj2.name)
+print(obj2.age)
+print(obj2)
+obj2.method1()
+
+obj2.age = 40
+print(obj2.age)
+
+del obj2.age
+del obj2
 
 
 
+### ERRORS ###
+print("### ERRORS ###")
 
