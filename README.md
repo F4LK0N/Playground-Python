@@ -1,12 +1,12 @@
 # PYTHON
 
 ## RUN
-```
+```shell
 ./main.py
 ```
 
 ## COMMENTS
-```
+```python
 #This is a comment
 
 """
@@ -17,7 +17,7 @@ that will be ignored by the compiler.
 ```
 
 ## VARIABLES
-```
+```python
 x = 5
 y = "Hello, World!"
 ```
@@ -32,10 +32,31 @@ Rules for Python variables:
 - A variable name cannot be any of the Python keywords.
 
 ### Python Keywords
+```python
 and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
+```
+
+## DATATYPES
+```python
+x = "Hello World"	# str
+x = 20	# int
+x = 20.5	# float
+x = 1j	# complex
+x = ["apple", "banana", "cherry"]	# list
+x = ("apple", "banana", "cherry")	# tuple
+x = range(6)	# range
+x = {"name" : "John", "age" : 36}	# dict
+x = {"apple", "banana", "cherry"}	# set
+x = frozenset({"apple", "banana", "cherry"})	# frozenset
+x = True	# bool
+x = b"Hello"	# bytes
+x = bytearray(5)	# bytearray
+x = memoryview(bytes(5))	# memoryview
+x = None	# NoneType
+```
 
 ## CASTING
-```
+```python
 x = str(3)    # x will be '3'
 y = int(3)    # y will be 3
 z = float(3)  # z will be 3.0
