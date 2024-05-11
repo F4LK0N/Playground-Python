@@ -33,6 +33,39 @@ print(x)
 print(y)
 print(z)
 
+print("## Output - Comma ##")
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+print("## Output - Concat ##")
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+
+print("## Output - Sum ##")
+x = 5
+y = 10
+print(x + y)
+
+print("## Global ##")
+xG1 = "awesome"
+def fXG1():
+  xG1 = "fantastic"
+  print("Python is " + xG1)
+fXG1()
+print("Python is " + xG1)
+
+print("## Global Keyword ##")
+xG2 = "awesome"
+def fXG2():
+  global xG2
+  xG2 = "fantastic"
+fXG2()
+print("Python is " + xG2)
+
 
 
 ### CASTING ###
