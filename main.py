@@ -461,6 +461,24 @@ del obj2.age
 del obj2
 
 
+print("## Inheritance ##")
+class ClassParent:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printName(self):
+        print(self.firstname, self.lastname)
+class ClassChild(ClassParent):
+    def __init__(self, fname, lname, age):
+        super().__init__(fname, lname)
+        self.age = age
+    def printAge(self):
+        print(self.age)
+obj3 = ClassChild("Name", "Lname", 56)
+obj3.printName()
+obj3.printAge()
+
+
 
 ### ERRORS ###
 print("### ERRORS ###")
