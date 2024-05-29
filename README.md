@@ -2,7 +2,8 @@
 
 ## RUN
 ```shell
-./main.py
+python
+clear; ./main.py
 ```
 
 ## COMMENTS
